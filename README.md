@@ -118,7 +118,7 @@ Run the following command each time you want to start the ipsec and l2tp connect
 ### Ubuntu & Debian
     sudo mkdir -p /var/run/xl2tpd
     sudo touch /var/run/xl2tpd/l2tp-control
-    sudo service strongswan restart
+    sudo service strongswan-starter restart
     sudo service xl2tpd restart
     sudo service ipsec restart
     sleep 8
@@ -131,7 +131,7 @@ Run the following command each time you want to start the ipsec and l2tp connect
 ### CentOS/RHEL & Fedora
     sudo mkdir -p /var/run/xl2tpd
     sudo touch /var/run/xl2tpd/l2tp-control
-    sudo service strongswan restart
+    sudo service strongswan-starter restart
     sudo service xl2tpd restart
     sleep 8
     sudo strongswan up L2TP-PSK
